@@ -1,0 +1,25 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+}
+
+.body {
+  display: flex;
+  padding-bottom: 50px;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.bottom {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  border-top: solid 1px var(--adm-border-color);
+}
+
+.bottom .iconfont {
+  font-size: 20px;
+}

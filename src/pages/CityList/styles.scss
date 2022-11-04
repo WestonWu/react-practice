@@ -1,0 +1,14 @@
+.city-list {
+  padding-top: 45px;
+
+  .adm-list-item-content-arrow {
+    width: 0%;
+  }
+
+  .adm-index-bar-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+  }
+}

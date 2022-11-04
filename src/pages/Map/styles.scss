@@ -1,0 +1,79 @@
+#container {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.house-list {
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  height: 50%;
+  width: 100%;
+  flex-direction: column;
+  transition: all 1s;
+  transform: translate3d(0, 1000px, 0);
+  z-index: 999;
+
+  .house-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: gray;
+  }
+  .house-list-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 100%;
+    padding-bottom: 45px;
+    .house-list-item {
+      display: flex;
+      padding: 10px;
+      border-bottom: solid 1px #f6f5f6;
+      align-items: center;
+      img {
+        display: block;
+        width: 106px;
+        height: 80px;
+      }
+      .house-list-item-detail {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        padding: 0 0 0 10px;
+        .house-list-item-detail-desc {
+          padding: 3px 0;
+          color: darkgray;
+        }
+        .house-list-item-detail-tags {
+          display: flex;
+          flex-wrap: wrap;
+          span {
+            padding: 3px;
+            border-radius: 3px;
+            color: dodgerblue;
+            background-color: rgb(127, 255, 244);
+            margin-right: 3px;
+            margin-top: 3px;
+          }
+        }
+        p {
+          color: red;
+          .house-list-item-detail-price {
+            font-size: 18px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+.show {
+  transform: translate3d(0, 0, 0);
+}
